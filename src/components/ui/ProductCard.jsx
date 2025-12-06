@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ShoppingCart, Check } from "lucide-react";
+import { ShoppingCart, Check, Package } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export default function ProductCard({ product, addToCart, isDarkMode }) {
@@ -36,13 +36,15 @@ export default function ProductCard({ product, addToCart, isDarkMode }) {
         </div>
       )}
 
-      {product.image && (
-        <div className="relative overflow-hidden h-48 ">
-          <img
-            src={`${APIBase}/storage/${product.image}`}
-            alt={product.name}
-            className="w-full h-full object-cover"
-          />
+      {product.image ? (
+        <img
+          src={`${APIBase}/storage/${product.image}`}
+          alt={product.name}
+          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 rounded-t-xl"
+        />
+      ) : (
+        <div className="flex h-48 items-center justify-center bg-gray-300 rounded-t-xl">
+          <Package className="w-16 h-16 text-gray-500" />
         </div>
       )}
 

@@ -36,7 +36,6 @@ const ProductGrid = ({ products = [] }) => {
             isDarkMode ? "bg-gray-800 text-white" : "bg-white text-gray-900"
           }`}
         >
-          {/* Image */}
           <div
             onClick={() => navigate(`/products/${product.id}`)}
             className="relative h-48 overflow-hidden"
@@ -53,7 +52,6 @@ const ProductGrid = ({ products = [] }) => {
               </div>
             )}
 
-            {/* Overlay */}
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
               <button className="p-3 rounded-full bg-white/20 hover:bg-white/30">
                 <Eye className="w-5 h-5 text-white" />

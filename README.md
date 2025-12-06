@@ -39,6 +39,8 @@ CapitalAgroWebsite is a React frontend that presents products and categories fet
 - Light / dark theme support via `ThemeContext`
 - Reusable UI components (cards, grids, loaders, pagination)
 
+--
+
 ## Technologies Used
 
 - React 19 + JSX
@@ -138,6 +140,10 @@ ${VITE_API_URL}/storage/<image_path>`).
 ![Home overview](docs/home.png)
 
 ![Product Website](docs/Product.png)
+
+![Cart Page Website](docs/Cart.png)
+
+![Filter Page Website](docs/Filter.png)
 
 ![Categories Website](docs/Category.png)
 

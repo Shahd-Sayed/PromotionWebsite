@@ -1,10 +1,10 @@
 import HeroSection from "./../components/Home/HeroSection";
-import PromoHero from './../components/Home/PromoHero';
-import CategoriesSection from './../components/Home/CategoriesSection';
-import CurrentPromo from './../components/Home/CurrentPromo';
-import ProductsSection from './../components/Home/ProductsSection';
+import PromoHero from "./../components/Home/PromoHero";
+import CategoriesSection from "./../components/Home/CategoriesSection";
+import CurrentPromo from "./../components/Home/CurrentPromo";
+import ProductsSection from "./../components/Home/ProductsSection";
 
-function Home() {
+function Home({ addToCart }) {
   return (
     <>
       <HeroSection />
@@ -15,7 +15,7 @@ function Home() {
 
       <CurrentPromo />
 
-      <ProductsSection />
+      <ProductsSection addToCart={addToCart} />
     </>
   );
 }

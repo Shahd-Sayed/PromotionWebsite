@@ -6,7 +6,7 @@ function HeadingPages({ heading }) {
   return (
     <>
       <h2
-        className={`text-2xl font-bold my-5${
+        className={`text-2xl font-bold my-3 ${
           isDarkMode ? "text-white" : "text-gray-950"
         }`}>
         {heading}
